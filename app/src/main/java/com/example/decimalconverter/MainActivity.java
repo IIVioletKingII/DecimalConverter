@@ -26,6 +26,10 @@ public class MainActivity extends AppCompatActivity {
 		editBinary = binding.binaryTextInput;
 		editDecimal = binding.decimalTextInput;
 		editHexadecimal = binding.hexadecimalTextInput;
+
+		editBinary.setText( "0" );
+		editDecimal.setText( "0" );
+		editHexadecimal.setText( "0" );
 	}
 
 	public void onBinClick( View view ) {
