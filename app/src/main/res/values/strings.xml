@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Decimal Converter</string>
+
+    <string name="input_bin_text">Binary</string>
+    <string name="input_dec_text">Decimal</string>
+    <string name="input_hex_text">Hexadecimal</string>
+
+    <string name="convert_bin_text">Convert Binary</string>
+    <string name="convert_dec_text">Convert Decimal</string>
+    <string name="convert_hex_text">Convert Hexadecimal</string>
+</resources>

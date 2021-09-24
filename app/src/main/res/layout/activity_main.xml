@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--
+-->
+    <LinearLayout
+        android:id="@+id/beforeLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/rounded_layout_background"
+        android:backgroundTint="#1E5DD8"
+        android:fadingEdge="horizontal"
+        android:fadingEdgeLength="100dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:requiresFadingEdge="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/binaryTextInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:text="@string/input_bin_text"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/binaryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:onClick="onBinClick"
+            android:text="@string/convert_bin_text" />
+
+        <EditText
+            android:id="@+id/decimalTextInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:onClick="onDecClick"
+            android:text="@string/input_dec_text"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/decButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/convert_dec_text" />
+
+        <EditText
+            android:id="@+id/hexadecimalTextInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:onClick="onHexClick"
+            android:text="@string/input_hex_text"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/hexButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/convert_hex_text" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
